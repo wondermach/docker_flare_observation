@@ -7,6 +7,8 @@ services:
     build:
       context: ../images/flare_observation
       dockerfile: Dockerfile
+    environment:
+      PUBLIC_IP: "${BIND_ADDRESS}"
     ports:
       - ${BIND_ADDRESS}:9650:9650
       - ${BIND_ADDRESS}:9651:9651
