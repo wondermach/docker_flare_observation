@@ -1,0 +1,16 @@
+# build:  docker-compose build --no-cache 
+version: "3"
+
+
+services:
+  flare:
+    build:
+      context: ../images/flare_observation
+      dockerfile: Dockerfile
+    ports:
+      - ${BIND_ADDRESS}:9650:9650
+      - ${BIND_ADDRESS}:9651:9651
+    volumes:
+      - ${LOCAL_DATA_DIR}:/data/flare-data
+      - ${LOCAL_LOGS_DIR}:/data/flare-logs
+      - ${LOCAL_CONF_DIR}:/data/flare-conf
