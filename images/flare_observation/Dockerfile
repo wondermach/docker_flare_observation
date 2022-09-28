@@ -35,7 +35,6 @@ RUN git clone https://github.com/flare-foundation/go-flare.git
 WORKDIR "/data/flare/go-flare/avalanchego"
 RUN ./scripts/build.sh
 WORKDIR /data
-ADD env.properties ./
 ADD start_observation_node.sh ./
 RUN chmod 770 ./start_observation_node.sh
 
