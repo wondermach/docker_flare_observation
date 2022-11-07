@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Sep 29 21:39:53 CEST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-0183-8ac3-25ad-00001d2d1df0 
+on database directory /tmp/pandamDB5 with class loader org.springframework.boot.loader.LaunchedURLClassLoader@4ccabbaa 
+Loaded from file:/tmp/drivers/derby-10.11.1.1.jar
+java.vendor=Ubuntu
+java.runtime.version=11.0.9.1+1-Ubuntu-0ubuntu1.20.04
+user.dir=/host/lavoro/wonderftso/docker_flare_observation
+os.name=Linux
+os.arch=amd64
+os.version=5.4.0-58-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
