@@ -1,4 +1,4 @@
-# build:  docker-compose build --no-cache 
+ build:  docker-compose build --no-cache 
 version: "3"
 
 
@@ -14,8 +14,7 @@ services:
       - ${BIND_ADDRESS}:9651:9651
     volumes:
       - ${LOCAL_DATA_DIR}:/data/flare-data
-      - ${LOCAL_LOGS_DIR}:/data/flare-logs
-      - ${LOCAL_CONF_DIR}:/data/flare-conf
+      - /data/flare-conf/C:/data/flare/go-flare/config/localflare/C/
     networks:
       flarenet:
          ipv4_address: 172.19.0.10
@@ -25,3 +24,4 @@ networks:
         driver: default
         config:
           - subnet: 172.19.0.0/24
+
